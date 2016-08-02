@@ -9,9 +9,9 @@ import baseball.Count.COUNT_STATUS;
 
 public class Main {
 
-	Count count = new Count();
-	Runners runners = new Runners();
-	Score score = new Score();
+	private Count count = new Count();
+	private Runners runners = new Runners();
+	private Score score = new Score();
 
 	/**
 	 * メインメソッド
@@ -89,6 +89,7 @@ public class Main {
 			runners.hit(1);
 			break;
 		case OUT_AND_CHANGE:
+			runners.clear();
 			score.change();
 			score.printIning();
 

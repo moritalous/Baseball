@@ -7,7 +7,7 @@ import java.util.List;
 public class Runners {
 
 	/** 走者リスト **/
-	List<Runner> runners;
+	private List<Runner> runners;
 
 	/** 走者の状態更新後のステータス **/
 	enum RUNNER_STATUS {
@@ -58,6 +58,10 @@ public class Runners {
 		}
 		runners.removeAll(removeRunner);
 		return point;
+	}
+
+	public void clear() {
+		runners.clear();
 	}
 
 	/** 塁状態のプリント **/
