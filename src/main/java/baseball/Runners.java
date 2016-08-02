@@ -60,6 +60,7 @@ public class Runners {
 		return point;
 	}
 
+	/** ランナークリア **/
 	public void clear() {
 		runners.clear();
 	}
